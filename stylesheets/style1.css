@@ -1,6 +1,4 @@
-link {
-    display: none;
-	} 
+link {display: none;} 
 P 	{ 
 	text-align: center 
 	}
@@ -17,7 +15,7 @@ li      {
     float: left}
 
     a.nav:link,a.nav:visited
-    {
+	{
     display:block;
     width:230px;
 	position: relative;
