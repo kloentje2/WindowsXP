@@ -8,4 +8,4 @@ li      {float: left}
     a.nav:link,a.nav:visited
 	{display:block; width:230px; position: relative; left: 150px; font-weight:bold; color:#FFFFFF; background-color:#027D9E; text-align:center; padding:6px; text-decoration:none; text-transform:uppercase;}
 
-	#header_image_sociable {border:5px solid #0A0A2A; margin-left: 160px; margin-right: 160px; width:990px; height:180px; background-image: url("../images/Header.jpg");}
+	#header_image_sociable {border:5px solid #0A0A2A; margin-left: auto; margin-right: auto; width:990px; height:180px; background-image: url("../images/Header.jpg");}
