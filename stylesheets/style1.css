@@ -6,6 +6,6 @@ ul 	{overflow: hidden; margin: 0; padding: 0; margin-left: auto; margin-right: a
 li      {float: left}
 
     a.nav:link,a.nav:visited
-	{display:block; width:230px; position: relative; font-weight:bold; color:#FFFFFF; background-color:#027D9E; text-align:center; padding:6px; text-decoration:none; text-transform:uppercase;}
+	{display:block; width:238px; position: relative; font-weight:bold; color:#FFFFFF; background-color:#027D9E; text-align:center; padding:6px; text-decoration:none; text-transform:uppercase;}
 
 	#header_image_sociable {border:5px solid #0A0A2A; margin-left: auto; margin-right: auto; width:990px; height:180px; background-image: url("../images/Header.jpg");}
