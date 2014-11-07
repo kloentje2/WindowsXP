@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <title>Creations & Co</title>
 <link rel="stylesheet" href="stylesheets/style1.css">
+<script type="text/javascript">
+function showImage(imgName) {
+    document.getElementById('largeImg').src = imgName;
+    showLargeImagePanel();
+    unselectAll();
+	}
+function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.visibility = 'visible';
+	}
+function unselectAll() {
+    if(document.selection) document.selection.empty();
+    if(window.getSelection) window.getSelection().removeAllRanges();
+    }
+    function hideMe(obj) {
+    obj.style.visibility = 'hidden';
+    }
+</script>
 </head>
 <body background="images/Background.jpg">
 <div id="header_image_sociable">  </div>
@@ -14,13 +31,27 @@
   <li><a class="nav" href="random.html">Random</a></li>
 		</ul>
 	<br>
- <div style="margin-left: auto; margin-right: auto; width:980px; height:500px; background-color:Lavender; color:Black; border:5px solid #0A0A2A">
+ <div style="margin-left: auto; margin-right: auto; width:980px; height:2000px; background-color:Lavender; color:Black; border:5px solid #0A0A2A">
 <h2><p>Creations page</p></h2>
+<p>These following images are stuff I have created in Photoshop or Flash professional.<br></p>
+<p><div id="largeImgPanel" onclick="hideMe(this);">
+	<p><img id="largeImg" style="border:2px solid #0A0A2A; height: 100%; margin: 0; padding: 0;" /></P>
+</div></p><p>
+<img src="images/creations/Small_mDiyo.png" style="cursor:pointer" onclick="showImage('images/creations/Big_mDiyo.png');" />
+<img src="images/creations/Small_Shotgun.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Shotgun.png');" />
+<img src="images/creations/Small_Bradwurst.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Bradwurst.png');" />
+<img src="images/creations/Small_Banana.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Banana.png');" />
+<img src="images/creations/Small_Gorilla.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Gorilla.png');" />
+<img src="images/creations/Small_Apple.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Apple.png');" />
+<img src="images/creations/Small_Gmod.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Gmod.png');" />
+<img src="images/creations/Small_Photoshop.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Photoshop.png');" />
+<img src="images/creations/Small_Scribblenauts.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Scribblenauts.png');" />
+<img src="images/creations/Small_Guesswho.png" style="cursor:pointer" onclick="showImage('images/creations/Big_Guesswho.png');" />
+</p>
+<br><p>because its a bit much <a href="http://imgur.com/a/oaGiY#HWb4Xrm">Adobe suit icons</a>.</p><br><br><br><br><br>
 <br>
-<p></p>
-<br><br><br><br><br><br>
-</div> 
-<br>
+</div>
+
 <div style="margin-left: auto; margin-right: auto; width:980px; height:45px; background-color:lavender; color:Black; border:5px solid #0A0A2A">
 <p>
 Copyrighted &copy; 2014, by <font color="#070719"><b>Mrbysco</b></font>. Do not distribute
