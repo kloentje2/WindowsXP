@@ -1,7 +1,7 @@
 link {display: none;} 
 P 	{text-align: center}
 
-ul 	{overflow: hidden; margin: 0; padding: 0; allign: center list-style-type: none;}
+ul 	{overflow: hidden; margin: 0; padding: 0; allign: center; list-style-type: none;}
 
 li      {float: left}
 
