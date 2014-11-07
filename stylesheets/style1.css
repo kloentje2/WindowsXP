@@ -1,33 +1,9 @@
 link {display: none;} 
-P 	{ 
-	text-align: center 
-	}
+P 	{text-align: center}
 
-ul 	{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-	allign: center
-    list-style-type: none;
-	}
+ul 	{overflow: hidden; margin: 0; padding: 0; allign: center list-style-type: none;}
 
-li      {
-    float: left}
+li      {float: left}
 
     a.nav:link,a.nav:visited
-	{
-    display:block;
-    width:230px;
-	position: relative;
-	left: 150px;
-    font-weight:bold;
-    color:#FFFFFF;
-    background-color:#027D9E;
-    text-align:center;
-    padding:6px;
-    text-decoration:none;
-    text-transform:uppercase;
-    }
-    a:hover,a:active
-    {
-}
+	{display:block; width:230px; position: relative; left: 150px; font-weight:bold; color:#FFFFFF; background-color:#027D9E; text-align:center; padding:6px; text-decoration:none; text-transform:uppercase;}
