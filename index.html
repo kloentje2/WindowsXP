@@ -75,8 +75,8 @@
       href="images/Favicon.png">
 </head>
 <body>
-<img src="images/Taskbar.png" style="position: fixed; bottom: 0; left: 0; background-size: 100% auto"/>
-<img src="images/TaskIcons.png" style="position: fixed; bottom: 0; left: 100; background-size: 100% auto"/>
+<!-- Start Navigation -->
+<img src="images/Taskbar.png" style="position: absolute; bottom: 0; left: 0; background-size: 100% auto"/>
 <img src="images/Start.png" onmouseover="this.src='images/StartPressed.png'" 
 onmouseout="this.src='images/Start.png'" onclick="toggle_visibility('Menu'); toggle_visibility('Navigation')" 
 style="position: fixed; bottom: 0; left: 0; heigth: 100%"/>
@@ -95,20 +95,28 @@ GetClock();
 setInterval(GetClock,1000);
 }
 </script>
-<div id="clockbox" style="position: fixed; bottom: 6; right: 30;"></div>
+<div id="clockbox" style="position: fixed; bottom: 7; right: 15;"></div>
 </img>
 <img src="images/Menu.png" style="position: fixed; bottom: 28; left: 0; visibility: hidden;" id="Menu">
 <nav id="Navigation" style="visibility: hidden;">
 	<ul>
-	<li><a class="nav" href="index.html" style="position: fixed; bottom: 405; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Home</a></li>
-	<li><a class="nav" href="creations.html" style="position: fixed; bottom: 360; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Iets</a></li>
-	<li><a class="nav" href="about.html" style="position: fixed; bottom: 315; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Iets anders</a></li>
-	<li><a class="nav" href="random.html" style="position: fixed; bottom: 270; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Nog wat anders</a></li>
+	<li><a class="nav" href="index.php" style="position: fixed; bottom: 405; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Home</a></li>
+	<li><a class="nav" href="creations.php" style="position: fixed; bottom: 360; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Iets</a></li>
+	<li><a class="nav" href="about.php" style="position: fixed; bottom: 315; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Iets anders</a></li>
+	<li><a class="nav" href="random.php" style="position: fixed; bottom: 270; left: 8"><img src='images/folder.png' style="position:relative; bottom: -8px"/> Nog wat anders</a></li>
 	</ul>
 </nav>
 </img>
-
+<!-- End of Navigation -->
+<div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText')">
+<img src="images/Notepad.ico" style="position: relative; left: 20"><font size="3pt" color="white" face="Segou UI" style="position: relative; bottom: -20; right: 35">README.exe</font></img>
 </div>
+<!--Notepad.exe text -->
+<img src="images/Little Notepad.png" style="Position: relative; left: 250; visibility: hidden;" id="Notepad">
+<p id="NotepadText" style="position: relative; bottom: 540; right: 360; visibility: hidden; ">
+
+</p></img>
+<!--end Notepad.exe -->
 <script src="js/konami.js"></script>
 <script>
 var easter_egg = new Konami('konami.php');
