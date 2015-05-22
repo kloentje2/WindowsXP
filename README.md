@@ -1,6 +1,7 @@
 Mrbysco.github.io
 =================
 
-This is a simple HTML/CSS website I created because I had my first HTML lesson. 
-I was just fiddling around and thats how I got this.
-Its my first website :P.
+This website was created due to an assigment from my school, (portfolio website)
+As I got a suggestion on a vertical Navigation by @firedingo I thought of the Menu bar of Windows.
+And as Windows XP was the best in that, I thought: "Let's theme the website around Windows XP and let it look like it"
+And thats how this page started.
