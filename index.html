@@ -76,11 +76,11 @@
 </head>
 <body>
 <!-- Start Navigation -->
-<img src="images/Taskbar.png" style="position: absolute; bottom: 0; left: 0; width: 100%; min-height: 28px"/>
+<img src="images/Taskbar.png" style="position: absolute; bottom: 0; left: 0; width: 100%; min-height: 28px; z-index:1"/>
 <img src="images/Start.png" onmouseover="this.src='images/StartPressed.png'" 
 onmouseout="this.src='images/Start.png'" onclick="toggle_visibility('Menu'); toggle_visibility('Navigation')" 
 style="position: fixed; bottom: 0; left: 0; heigth: 100%; z-index:1"/>
-<img src="images/TimeBar.png" style="position: fixed; bottom: 0; right: 0; heigth: 100%">
+<img src="images/TimeBar.png" style="position: fixed; bottom: 0; right: 0; heigth: 100%; z-index:1">
 <script type="text/javascript">
 function GetClock(){
 var d=new Date();
