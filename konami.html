@@ -67,56 +67,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Windows Portfolio</title>
-<link href="css/style1.css" rel="stylesheet" />
-<script type="text/javascript" src="js/visibility.js"></script>
+<link href="css/style2.css" rel="stylesheet" />
+<script type="text/javascript" src="js/TypingText.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 <link rel="icon" 
       type="image/png" 
       href="images/Favicon.png">
 </head>
 <body>
-<!-- Start Navigation -->
-<img src="images/Taskbar.png" style="position: absolute; bottom: 0; left: 0; background-size: 100% auto"/>
-<img src="images/Start.png" onmouseover="this.src='images/StartPressed.png'" 
-onmouseout="this.src='images/Start.png'" onclick="toggle_visibility('Menu'); toggle_visibility('Navigation')" 
-style="position: fixed; bottom: 0; left: 0; heigth: 100%"/>
-<img src="images/TimeBar.png" style="position: fixed; bottom: 0; right: 0; heigth: 100%">
+<div id="example1">
+<font color="white" size="4" face="Segou UI">A problem has been detected and Windows Portfolio has been shut down to prevent damage to your computer<br/>
+<br/>
+If this is the first time you've seen this Stop error screen,<br/>
+restart the website. If this screen appears again, follow<br/>
+these steps:<br/>
+<br/>
+Check to be sure you haven't entered an old cheatcode. If you have entered an old cheatcode, check what cheatcode you entered.
+</font></div>
+
+
 <script type="text/javascript">
-function GetClock(){
-var d=new Date();
-var nhour=d.getHours(),nmin=d.getMinutes();
-if(nmin<=9) nmin="0"+nmin
-
-document.getElementById('clockbox').innerHTML="<font color='white' face='Segou UI'>"+nhour+":"+nmin+"</font>";
-}
-
-window.onload=function(){
-GetClock();
-setInterval(GetClock,1000);
-}
+//Define first typing example:
+new TypingText(document.getElementById("example1"));
+//Type out examples:
+TypingText.runAll();
 </script>
-<div id="clockbox" style="position: fixed; bottom: 7; right: 15;"></div>
-</img>
-<img src="images/Menu.png" style="position: fixed; bottom: 28; left: 0; visibility: hidden;" id="Menu">
-<nav id="Navigation" style="visibility: hidden;">
-	<ul>
-	<li><a class="nav" href="index.php" style="position: fixed; bottom: 405; left: 8; heigth: auto; width: 160"><img src='images/Icon_5.png' style="position:relative; bottom: -8px; heigth: 32px; width: 32px"/> Home</a></li>
-	<li><a class="nav" href="creations.php" style="position: fixed; bottom: 360; left: 8; heigth: auto; width: 160"><img src='images/Icon_5.png' style="position:relative; bottom: -8px; heigth: 32px; width: 32px"/> Iets</a></li>
-	<li><a class="nav" href="about.php" style="position: fixed; bottom: 315; left: 8; heigth: auto; width: 160"><img src='images/Icon_5.png' style="position:relative; bottom: -8px; heigth: 32px; width: 32px"/> Iets anders</a></li>
-	<li><a class="nav" href="random.php" style="position: fixed; bottom: 270; left: 8; heigth: auto; width: 160"><img src='images/Icon_5.png' style="position:relative; bottom: -8px; heigth: 32px; width: 32px"/> Nog wat anders</a></li>
-	</ul>
-</nav>
-</img>
-<!-- End of Navigation -->
-<div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText')">
-<img src="images/Icon_71.png" style="position: fixed; left: 20;"><font size="3pt" color="white" face="Segou UI" style="position: fixed; top: 60; left: 10">README.exe</font></img>
-</div>
-<!--Notepad.exe text -->
-<img src="images/Little Notepad.png" style="Position: fixed; left: 250; visibility: hidden; width: auto; heigth: auto;" id="Notepad">
-<p id="NotepadText" style="position: fixed; top: 55; left: 265; visibility: hidden; width: auto; heigth: auto; ">
-Hello, I see you have reached my website.
-</p></img>
-<!--end Notepad.exe -->
 <script src="js/konami.js"></script>
 <script>
 var easter_egg = new Konami('konami.html');

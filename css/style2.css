@@ -3,11 +3,7 @@ body{
 	heigth: 98%;
 	font-family: Segoe UI;
 	font-size: 9pt;
-	background: url("../images/Bliss.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
+	background-color: #0000A9
 }
 
 link {
