@@ -97,7 +97,7 @@ setInterval(GetClock,1000);
 </script>
 <div id="clockbox" style="position: fixed; bottom: 7; right: 15;"></div>
 </img>
-<img src="images/Menu.png" style="position: fixed; bottom: 28; left: 0; visibility: hidden;" id="Menu">
+<img src="images/Menu.png" style="position: fixed; bottom: 28; left: 0; visibility: hidden; z-index:1" id="Menu">
 <nav id="Navigation" style="visibility: hidden;">
 	<ul>
 	<li><a class="nav" href="index.html" style="position: fixed; bottom: 405; left: 8;"><img src='images/Icon_5.png' style="position:relative; bottom: -8px"/> Home</a></li>
@@ -109,7 +109,7 @@ setInterval(GetClock,1000);
 </img>
 <!-- End of Navigation -->
 <div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText')">
-<img src="images/Icon_71.png" style="position: fixed; left: 24;"><font size="2pt" color="white" face="Segou UI" style="position: fixed; top: 42; left: 10">README.txt</font></img>
+<img src="images/Icon_71.png" style="position: fixed; left: 24; z-index:0"><font size="2pt" color="white" face="Segou UI" style="position: fixed; top: 42; left: 10">README.txt</font></img>
 </div>
 <!--Notepad.exe text -->
 <img src="images/Little Notepad.png" style="Position: fixed; left: 250; visibility: hidden; width: auto; heigth: auto;" id="Notepad">
