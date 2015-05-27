@@ -87,7 +87,7 @@ var d=new Date();
 var nhour=d.getHours(),nmin=d.getMinutes();
 if(nmin<=9) nmin="0"+nmin
 
-document.getElementById('clockbox').innerHTML="<font color='white' face='Segou UI'>"+nhour+":"+nmin+"</font>";
+document.getElementById('clockbox').innerHTML="<font color='white' face='Segou'>"+nhour+":"+nmin+"</font>";
 }
 
 window.onload=function(){
@@ -95,7 +95,7 @@ GetClock();
 setInterval(GetClock,1000);
 }
 </script>
-<div id="clockbox" style="position: fixed; bottom: 7; right: 15;"></div>
+<div id="clockbox" style="position: fixed; bottom: 7; right: 15; z-index: 2"></div>
 </img>
 <img src="images/Menu.png" style="position: fixed; bottom: 28; left: 0; visibility: hidden; z-index:1" id="Menu">
 <a href="Shutdown.html" style="position: fixed; bottom: 37; left: 251; z-index:1; visibility: hidden"> "<img src="images/Shutdown.png" style="position: fixed; bottom: 37; left: 251; visibility: hidden; z-index: 1" id="shutdown"></a>
