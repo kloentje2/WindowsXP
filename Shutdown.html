@@ -66,7 +66,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>Windows Portfolio</title>
+<title>Windows Shutdown</title>
 <link href="css/style3.css" rel="stylesheet" />
 <script src="js/jquery 1.8.3.js"></script>
 <link rel="icon" 
@@ -74,8 +74,15 @@
       href="images/Favicon.png">
 </head>
 <body>
+<script>
+function close_window() {
+  if (confirm("Close Window?")) {
+    close();
+  }
+}
+setTimeout(function(){close_window()}, 10000);
 
-
+</script>
 <script src="js/konami.js"></script>
 <script>
 var easter_egg = new Konami('konami.html');
