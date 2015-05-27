@@ -29,6 +29,10 @@ P 	{
     visibility: hidden;
 }
 
+navHidden{
+	position: left bottom;
+	}
+
 nav{
 	position: left bottom;
 	heigth: 200px;
@@ -57,7 +61,4 @@ nav a:link, a:visited {
 
 a:hover, a:active {
    background-color: #F2F2F2;
-}
-
-#NotepadIco{
 }
