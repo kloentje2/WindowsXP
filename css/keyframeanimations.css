@@ -22,8 +22,8 @@
   }
   
   to {
-   top: 40;
-   left: 250;
+   top: 43; 
+   left: 256;
    width: 607.5; 
  }
 }
@@ -34,14 +34,14 @@
 
 @-webkit-keyframes NotepadTextAni {
   from {
-	left: 34; 
+	left: 24; 
 	top: 8;
     width:10%;
   }
   
   to {
    top: 43; 
-   left: 250;
+   left: 256;
    width: 580;
    heigth: auto;
  }
