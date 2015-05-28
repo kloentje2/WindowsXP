@@ -1,6 +1,8 @@
-html{height: 98%;}
+html{
+	height: 98%;
+	width: 98%;
+	}
 body{
-	heigth: 98%;
 	font-family: Segoe UI;
 	font-size: 9pt;
 	background-color: #0000A9
