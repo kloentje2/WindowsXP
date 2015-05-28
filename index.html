@@ -81,6 +81,7 @@
 <img src="images/Start.png" onmouseover="this.src='images/StartPressed.png'" 
 onmouseout="this.src='images/Start.png'" onclick="toggle_visibility('Menu'); toggle_visibility('Navigation'); toggle_visibility('shutdown')"
 id="Start"/>
+<!-- Clock starts here -->
 <img src="images/TimeBar.png" id="TimeBar">
 <script type="text/javascript">
 function GetClock(){
@@ -97,7 +98,8 @@ setInterval(GetClock,1000);
 }
 </script>
 <div id="clockbox"></div>
-</img>
+<!-- Clock ends here -->
+
 <img src="images/Menu.png" style="visibility: hidden;" id="Menu">
 <a href="Shutdown.html" style="position: fixed; bottom: 37; left: 251; z-index:1; visibility: hidden"> "<img src="images/Shutdown.png" style="visibility: hidden;" id="shutdown"></a>
 <nav id="Navigation" style="visibility: hidden;">
@@ -123,7 +125,7 @@ setInterval(GetClock,1000);
 Hello, My name is Mrbysco. You have entered my website.<br />
 <br/>
 On this page you are going to find out stuff about me.
-</p></img>
+</p>
 
 <!--end Notepad.exe -->
 
