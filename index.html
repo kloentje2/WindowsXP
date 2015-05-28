@@ -116,11 +116,13 @@ setInterval(GetClock,1000);
 <script> 
 		function NotepadAni(){document.getElementById('Notepad').className ="NotepadAnimation";}
 		function NotepadTextAni(){document.getElementById('NotepadText').className ="NotepadTextAnimation";}
+		function NotepadExitAni(){document.getElementById('NotepadClose').className ="NotepadExitAnimation";}
 </script>
-<div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText'); NotepadAni(); NotepadTextAni()">
+<div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText'); toggle_visibility('NotepadClose') ; NotepadAni(); NotepadTextAni(); NotepadExitAni();">
 <img src="images/Icon_71.png" style="position: fixed; left: 24; top: 8; z-index:0"><font size="2pt" color="white" face="Segou UI" style="position: fixed; top: 42; left: 10">README.txt</font></img>
 </div>
 <img src="images/Little Notepad.png" style="Position: fixed; left: 250; visibility: hidden; width: 607.5; heigth: 425.75; z-index:0" id="Notepad">
+<img src="images/NoteExit.png" id="NotepadClose" style="visibility: hidden;" onclick="toggle_visibility('Notepad'); toggle_visibility('NotepadText'); toggle_visibility('NotepadClose')">
 <p id="NotepadText" style="position: relative;  visibility: hidden; width: 580; heigth: auto; ">
 Hello, My name is Mrbysco. You have entered my website.<br />
 <br/>
