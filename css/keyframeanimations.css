@@ -1,19 +1,5 @@
 /* NotepadImage animation */
 
-@-moz-keyframes NotepadAni {
-  from {
-	left: 24; 
-	top: 8;
-    width:10%;
-  }
-  
-  to {
-   top: 40;
-   left: 250;
-   width: 607.5; 
- }
-}
-
 @-webkit-keyframes NotepadAni {
   from {
 	left: 24; 
@@ -46,21 +32,6 @@
 
 /* NotepadText animation */
 
-@-moz-keyframes NotepadTextAni {
-  from {
-	left: 24; 
-	top: 8;
-    width:10%;
-  }
-  
-  to {
-   top: 45; 
-   left: 260;
-   width: 580; 
-   heigth: auto;
- }
-}
-
 @-webkit-keyframes NotepadTextAni {
   from {
 	left: 24; 
@@ -84,7 +55,7 @@
   }
   
   to {
-   top: 45; 
+   top: 71; 
    left: 260;
    width: 580; 
    heigth: auto;
