@@ -101,15 +101,25 @@ a:hover, a:active {
 	position:relative; 
 	bottom: -8px
 	}
-	
+
+#notepad{
+	Position: fixed; 
+	z-index:0
+	}
+
+#NotepadText{
+	position: fixed;
+	z-index:0;
+	}
+
 #NotepadIco{
 	cursor: pointer;
 	}
 
 #NotepadClose{
 	position: fixed;
-	top: 48;
-	left: 844;
+	top: 57;
+	left: 831;
 	cursor: pointer;
 	}
 /* End image styling */
