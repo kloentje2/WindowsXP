@@ -118,7 +118,7 @@ setInterval(GetClock,1000);
 		function NotepadTextAni(){document.getElementById('NotepadText').className ="NotepadTextAnimation";}
 		function NotepadExitAni(){document.getElementById('NotepadClose').className ="NotepadExitAnimation";}
 </script>
-<div id="NotepadIco" onclick="toggle_visibility('Notepad');toggle_visibility('NotepadText'); toggle_visibility('NotepadClose') ; NotepadAni(); NotepadTextAni(); NotepadExitAni();">
+<div id="NotepadIco" onclick="toggle_visibility('Notepad'); toggle_visibility('NotepadText'); toggle_visibility('NotepadClose'); NotepadAni(); NotepadTextAni(); NotepadExitAni();">
 <img src="images/Icon_71.png" style="position: fixed; left: 24; top: 8; z-index:0"><font size="2pt" color="white" face="Segou UI" style="position: fixed; top: 42; left: 10">README.txt</font></img>
 </div>
 <img src="images/Little Notepad.png" style="Position: fixed; left: 250; visibility: hidden; width: 607.5; heigth: 425.75; z-index:0" id="Notepad">
@@ -128,9 +128,21 @@ Hello, My name is Mrbysco. You have entered my website.<br />
 <br/>
 On this page you are going to find out stuff about me.
 </p>
-
 <!--end Notepad.exe -->
+<!--Start Internet Explorer -->
+<div id="InternetExplorerIco" onclick="toggle_visibility('IETopMiddle'); toggle_visibility('IETopLeft'); toggle_visibility('IETopRight'); toggle_visibility('IEBottomMiddle'); toggle_visibility('IEBottomRight'); toggle_visibility('IEClose');">
+<img src="images/IE/InternetIcon.png" style="position: fixed; left: 24; top: 70; z-index:0"><font size="2pt" color="white" face="Segou UI" style="position: fixed; top: 105; left: 16">Internet<br/>Explorer.exe</font></img>
+</div>
+<img src="images/IE/TopMiddle.png" id="IETopMiddle" style="visibility: hidden;">
+<img src="images/IE/TopLeft.png" id="IETopLeft" style="visibility: hidden;">
+<img src="images/IE/TopRight.png" id="IETopRight" style="visibility: hidden;">
+<img src="images/IE/BottomMiddle.png" id="IEBottomMiddle" style="visibility: hidden;">
+<img src="images/IE/BottomLeft.png" id="IEBottomLeft" style="visibility: hidden;">
+<img src="images/IE/BottomRight.png" id="IEBottomRight" style="visibility: hidden;">
+<img src="images/IE/IEClose.png" id="IEClose" style="visibility: hidden;" onclick="toggle_visibility('IETopMiddle'); toggle_visibility('IETopLeft'); toggle_visibility('IETopRight'); toggle_visibility('IEBottomMiddle'); toggle_visibility('IEBottomRight'); toggle_visibility('IEClose');">
 
+
+<!--End Internet Explorer -->
 <script src="js/konami.js"></script>
 <script>
 var easter_egg = new Konami('konami.html');
