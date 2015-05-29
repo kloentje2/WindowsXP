@@ -1,5 +1,8 @@
 html{height: 98%;}
-body{height:98%;}
+body{
+	height:98%;
+	width: 98%;
+	}
 #content{
 	width:65%;
 	margin:0px auto;

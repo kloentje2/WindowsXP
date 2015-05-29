@@ -123,7 +123,7 @@ setInterval(GetClock,1000);
 </div>
 <img src="images/Little Notepad.png" style="Position: fixed; left: 250; visibility: hidden; width: 607.5; heigth: 425.75; z-index:0" id="Notepad">
 <img src="images/NoteExit.png" id="NotepadClose" style="visibility: hidden;" onclick="toggle_visibility('Notepad'); toggle_visibility('NotepadText'); toggle_visibility('NotepadClose')">
-<p id="NotepadText" style="position: relative;  visibility: hidden; width: 580; heigth: auto; ">
+<p id="NotepadText" style="position: fixed;  visibility: hidden; width: 580; heigth: auto; ">
 Hello, My name is Mrbysco. You have entered my website.<br />
 <br/>
 On this page you are going to find out stuff about me.
@@ -140,8 +140,7 @@ On this page you are going to find out stuff about me.
 <img src="images/IE/BottomLeft.png" id="IEBottomLeft" style="visibility: hidden;">
 <img src="images/IE/BottomRight.png" id="IEBottomRight" style="visibility: hidden;">
 <img src="images/IE/IEClose.png" id="IEClose" style="visibility: hidden;" onclick="toggle_visibility('IETopMiddle'); toggle_visibility('IETopLeft'); toggle_visibility('IETopRight'); toggle_visibility('IEBottomMiddle'); toggle_visibility('IEBottomRight'); toggle_visibility('IEClose'); toggle_visibility('InternetContent');">
-<iframe src="HtmlCeption/index.html" id="InternetContent" width="100%" height="100%" style="visibility: hidden">>
-
+<iframe src="HtmlCeption/index.html" id="InternetContent" width="100%" height="auto" style="visibility: hidden;">
 <!--End Internet Explorer -->
 <script src="js/konami.js"></script>
 <script>

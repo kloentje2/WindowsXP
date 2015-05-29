@@ -20,7 +20,7 @@ link {
 	
 nav{
 	position: left bottom;
-	heigth: 200px;
+	height: 200px;
 	width: 400px;
 	}
 
@@ -65,7 +65,7 @@ a:hover, a:active {
 	position: fixed; 
 	bottom: 0; 
 	left: 0; 
-	z-index:1;
+	z-index:2;
 	cursor: pointer;
 	}
 	
@@ -154,7 +154,7 @@ a:hover, a:active {
 	position: fixed;
 	bottom: 28; 
 	left: 0;
-	z-index:0
+	z-index:1
 	}
 
 #IEBottomMiddle{
@@ -163,19 +163,19 @@ a:hover, a:active {
 	left: 0;
 	width: 100%;  
 	min-height: 22px;  
-	z-index:0
+	z-index:1
 	}
 
 #IEBottomRight{
 	position: fixed;
 	bottom: 28; 
 	right: 0;
-	z-index:0
+	z-index:1
 	}
-
 #InternetContent{
 	background: #FFFFFF;
-	margin-right: 0px;
-	margin-top: 47px;
-	margin-bottom: 50px;
+	position: fixed;
+	top: 114px;
+	left: 0;
+	height: calc(100% - 164px);
 	}
