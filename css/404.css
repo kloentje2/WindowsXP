@@ -1,0 +1,110 @@
+html{
+	height: 98%;
+	width: 98%;
+	}
+body{
+	font-family: Segoe UI;
+	font-size: 9pt;
+	background: url("../images/Bliss.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	}
+
+link {
+	display: none;
+	} 
+	
+nav{
+	position: left bottom;
+	height: 200px;
+	width: 400px;
+	}
+
+nav ul{
+	list-style-type: none;
+	}
+	
+nav li{
+	font-family: Segoe UI;
+	font-size: 8pt;
+	}
+
+nav a:link, a:visited {
+    display: block;
+    font-weight: bold; 
+	color: #000000;
+    text-align: left;
+    padding: 4px;
+    text-decoration: none;
+	width: 160;
+
+	}
+
+a:hover, a:active {
+   background-color: #F2F2F2;
+}
+
+#Taskbar{
+	position: fixed; 
+	bottom: 0; 
+	left: 0; 
+	width: 100%; 
+	min-height: 28px; 
+	z-index:1
+	}
+	
+#start{
+	position: fixed; 
+	bottom: 0; 
+	left: 0; 
+	z-index:1;
+	cursor: pointer;
+	}
+	
+#TimeBar{
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+	z-index:1
+	}
+
+#shutdown{
+	position: fixed; 
+	bottom: 37; 
+	left: 251; 
+	z-index: 3
+	}
+
+#clockbox{
+	position: fixed; 
+	bottom: 6; 
+	right: 18; 
+	z-index: 2
+	}
+	
+#Menu{
+	position: fixed; 
+	bottom: 28; 
+	left: 0;
+	z-index:2;
+	}
+
+#folderIco{
+	position:relative; 
+	bottom: -8px
+	}
+
+#MediaPlayer{
+	Position: fixed; 
+	left: 150;
+	top: 100;
+	z-index:-1
+	}
+	
+#RickRoll{
+	position: fixed;
+	top: 195;
+	left: 225;
+	}
