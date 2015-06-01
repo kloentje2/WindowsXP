@@ -1,0 +1,126 @@
+<!--
+    -\-                                                     
+    \-- \-                                                  
+     \  - -\                                                
+      \      \\                                             
+       \       \                                            
+        \       \\                                              
+         \        \\                                            
+         \          \\                                        
+         \           \\\                                      
+          \            \\                                                 
+           \            \\                                              
+           \. .          \\        I'm a pterodactyl, Dangit.		   
+            \    .       \\        Obey me!
+             \      .    \\        GET A LIFE!                            
+              \       .  \\                                 
+              \         . \\                                           
+              \            <=)                                         
+              \            <==)                                         
+              \            <=)                                           
+               \           .\\                                           _-
+               \         .   \\                                        _-//
+               \       .     \\                                     _-_/ /
+               \ . . .        \\                                 _--_/ _/
+                \              \\                              _- _/ _/
+                \               \\                      ___-(O) _/ _/ 
+                \                \                  __--  __   /_ /   
+                \                 \\          ____--__----  /    \_     
+                 \                  \\       -------       /   \_  \_     
+                  \                   \                  //   // \__ \_
+                   \                   \\              //   //      \_ \_ 
+                    \                   \\          ///   //          \__- 
+                    \                -   \\/////////    //            
+                    \            -         \_         //              
+                    /        -                      //                
+                   /     -                       ///                  
+                  /   -                       //                      
+             __--/                         ///
+  __________/                            // |               
+//-_________      ___                ////  |                
+        ____\__--/                /////    |                
+   -----______    -/---________////        |                
+     _______/  --/    \                   |                 
+   /_________-/       \                   |                 
+  //                  \                   /                 
+                       \.                 /                 
+                       \     .            /                 
+                        \       .        /                  
+                       \\           .    /                  
+                        \                /                  
+                        \              __|                  
+                        \              ==/                  
+                        /              //                   
+                        /          .  //                    
+                        /   .  .    //                      
+                       /.           /                       
+                      /            //                       
+                      /           /
+                     /          //
+                    /         //
+                 --/         /
+                /          //
+            ////         //
+         ///_________////
+-->
+<html lang="nl">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+<title>404 - Page not found</title>
+<link href="css/404.css" rel="stylesheet" />
+<link href="css/keyframeanimations.css" rel="stylesheet" />
+<script type="text/javascript" src="js/visibility.js"></script>
+<script type="text/javascript" src="js/konami.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<link rel="icon" 
+      type="image/png" 
+      href="images/Favicon.png">
+</head>
+<body>
+<!-- Start Navigation -->
+<img src="images/Taskbar.png" id="Taskbar"/>
+<img src="images/Start.png" onmouseover="this.src='images/StartPressed.png'" 
+onmouseout="this.src='images/Start.png'" onclick="toggle_visibility('Menu'); toggle_visibility('Navigation'); toggle_visibility('shutdown')"
+id="Start"/>
+<!-- Clock starts here -->
+<img src="images/TimeBar.png" id="TimeBar">
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes();
+if(nmin<=9) nmin="0"+nmin
+
+document.getElementById('clockbox').innerHTML="<font color='white' face='Segou'>"+nhour+":"+nmin+"</font>";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+<!-- Clock ends here -->
+
+<img src="images/Menu.png" style="visibility: hidden;" id="Menu">
+<a style="position: fixed; bottom: 37; left: 251; visibility: hidden"> "<img src="images/Shutdown.png" style="visibility: hidden;" id="shutdown"></a>
+<nav id="Navigation" style="visibility: hidden;">
+	<ul>
+	<li><a class="nav" href="index.html" style="position: fixed; bottom: 405; left: 8; z-index:2"><img src='images/Icon_5.png' id="folderIco"/> Desktop</a></li>
+	<li><a class="nav" href="biography.html" style="position: fixed; bottom: 360; left: 8; z-index:2"><img src='images/Icon_5.png' id="folderIco"/> Biography</a></li>
+	<li><a class="nav" href="cv.html" style="position: fixed; bottom: 315; left: 8; z-index:2"><img src='images/Icon_5.png' id="folderIco"/> CV</a></li>
+	<li><a class="nav" href="interests.html" style="position: fixed; bottom: 270; left: 8; z-index:2"><img src='images/Icon_5.png' id="folderIco"/> Interests</a></li>
+	</ul>
+</nav>
+<!-- End of Navigation -->
+<img src="images/MediaPlayer.png" style="visibility: visible;" id="MediaPlayer">
+ <video width="260" height="220" autoplay id="RickRoll">
+  <source src="videos/RickRoll.mp4" style="z-index: 1" type="video/mp4">
+  <source src="videos/RickRoll.ogg" style="z-index: 1" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+<script>
+var easter_egg = new Konami('konami.html');
+</script>
+</body>
+</html>
